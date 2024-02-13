@@ -1,6 +1,6 @@
 import Marquee from "react-fast-marquee";
 import styles from "./Gallery.module.css";
-import data from '../../../data.json'
+import data from "../../../data.json";
 
 const Gallery = () => {
     const marqParams = {
@@ -10,10 +10,10 @@ const Gallery = () => {
 
     return (
         <div className={styles.gallery} id="gallery">
-            <h2>Memories</h2>
+            {data.gallery.row1.length > 0 && <h2>Memories</h2>}
             <div className={styles.row}>
                 <Marquee {...marqParams} style={{ width: "100vw" }}>
-                    {data.gallery.row1.map((src) => (
+                    {data.gallery.row1.map((src: { image: string }) => (
                         <div className={styles.imgContainer}>
                             <img src={src.image} loading="lazy" />
                         </div>
@@ -26,7 +26,7 @@ const Gallery = () => {
                     {...marqParams}
                     style={{ width: "100vw" }}
                 >
-                    {data.gallery.row2.map((src) => (
+                    {data.gallery.row2.map((src: { image: string }) => (
                         <div className={styles.imgContainer}>
                             <img src={src.image} loading="lazy" />
                         </div>

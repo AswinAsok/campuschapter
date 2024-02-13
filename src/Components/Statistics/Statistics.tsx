@@ -30,7 +30,7 @@ const Statistics = () => {
             data.statistics.studentsCount ?? 0,
             data.statistics.learningCircles ?? 0,
             data.statistics.InterestGroups ?? 0,
-            data.statistics.karmaEarned ?? 0,
+            parseInt(data.statistics.karmaEarned) ?? 0,
         ];
 
         const startCounterAnimation = () => {
@@ -94,7 +94,7 @@ const Statistics = () => {
                                 {index >= 0
                                     ? counter >= 2
                                         ? `${counter}+`
-                                        : counter
+                                        : counter+``
                                     : counter.toLocaleString()}
                             </h3>
                             <p>

@@ -1,7 +1,7 @@
 import styles from "./Team.module.css";
 import line from "./assets/line.png";
 import line2 from "./assets/line2.png";
-import data from "../../../data.json"
+import data from "../../../data.json";
 
 const Team = () => {
     return (
@@ -53,16 +53,16 @@ const Team = () => {
                         <div className={styles.team1Img}>
                             <img
                                 className={styles.teamImageIndividual}
-                                src={data.team.campusCoLead.image}
+                                src={data.team.webdevelopmentIGLead.image}
                                 loading="lazy"
                             />
                         </div>
                         <div className={styles.teamNameDesignation}>
                             <div className={styles.teamMemberName}>
-                                {data.team.campusCoLead.name}
+                                {data.team.webdevelopmentIGLead.name}
                             </div>
                             <div className={styles.teamMemberDesignation}>
-                                Campus Co-Lead
+                                Web Development IG Lead
                             </div>
                         </div>
                     </div>
@@ -70,16 +70,16 @@ const Team = () => {
                         <div className={styles.team1Img}>
                             <img
                                 className={styles.teamImageIndividual}
-                                src={data.team.treasurer.image}
+                                src={data.team.uiuxIGLead.image}
                                 loading="lazy"
                             />
                         </div>
                         <div className={styles.teamNameDesignation}>
                             <div className={styles.teamMemberName}>
-                                {data.team.treasurer.name}
+                                {data.team["uiuxIGLead"].name}
                             </div>
                             <div className={styles.teamMemberDesignation}>
-                                Treasurer
+                                UI/UX IG Lead
                             </div>
                         </div>
                     </div>
@@ -87,16 +87,16 @@ const Team = () => {
                         <div className={styles.team1Img}>
                             <img
                                 className={styles.teamImageIndividual}
-                                src={data.team.technicalLead.image}
+                                src={data.team["ai/mlIGLead"].image}
                                 loading="lazy"
                             />
                         </div>
                         <div className={styles.teamNameDesignation}>
                             <div className={styles.teamMemberName}>
-                                {data.team.technicalLead.name}
+                                {data.team["ai/mlIGLead"].name}
                             </div>
                             <div className={styles.teamMemberDesignation}>
-                                Technical Lead
+                                AI/ML IG Lead
                             </div>
                         </div>
                     </div>
@@ -104,20 +104,20 @@ const Team = () => {
                         <div className={styles.team1Img}>
                             <img
                                 className={styles.teamImageIndividual}
-                                src={data.team.mediaLead.image}
+                                src={data.team["cybersecurityIGLead"].image}
                                 loading="lazy"
                             />
                         </div>
                         <div className={styles.teamNameDesignation}>
                             <div className={styles.teamMemberName}>
-                                {data.team.mediaLead.name}
+                                {data.team["cybersecurityIGLead"].name}
                             </div>
                             <div className={styles.teamMemberDesignation}>
                                 Media Lead
                             </div>
                         </div>
                     </div>
-                    <div className={`${styles.team} ${styles.team7}`}>
+                    {/* <div className={`${styles.team} ${styles.team7}`}>
                         <div className={styles.team1Img}>
                             <img
                                 className={styles.teamImageIndividual}
@@ -150,7 +150,7 @@ const Team = () => {
                                 Operation Lead
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
